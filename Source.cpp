@@ -1,7 +1,9 @@
+//Program to find connected components in a graph
 #include<iostream>
 #include<vector>
 #define S 1000
 using namespace std;
+//Function to traverse through all the nodes
 void DFS(vector<int> Alist[],int sel[], int index) {
 	sel[index] = 1;
 	for (int i = 0; i < Alist[index].size(); i++) {
